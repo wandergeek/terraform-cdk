@@ -139,7 +139,7 @@ namespace Examples
                     }
                 }
             });
-            // MapTerraformIterator s3BucketConfigurationIterator = MapTerraformIterator.FromMap(configuration.AsAnyMap);
+            MapTerraformIterator s3BucketConfigurationIterator = MapTerraformIterator.FromMap(configuration.AsAnyMap);
             // S3Bucket s3Buckets = new S3Bucket(this, "complex-iterator-buckets", new S3BucketConfig
             // {
             //     ForEach = s3BucketConfigurationIterator,
