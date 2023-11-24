@@ -163,26 +163,26 @@ namespace Examples
             // DOCS_BLOCK_END:iterators-chain
 
             // DOCS_BLOCK_START:iterators-for-expression
-            TerraformLocal values = new TerraformLocal(this, "values", new Dictionary<string, object> {
-                {
-                    "website",
-                    new Dictionary<string, object> {
-                        { "name", "website-static-files" },
-                        { "tags", new Dictionary<string, string> {
-                            { "app", "website" }
-                        }}
-                    }
-                },
-                {
-                    "images",
-                    new Dictionary<string, object> {
-                        { "name", "images" },
-                        { "tags", new Dictionary<string, string> {
-                            { "app", "image-converter" }
-                        }}
-                    }
-                }
-            });
+            // TerraformLocal values = new TerraformLocal(this, "values", new Dictionary<string, object> {
+            //     {
+            //         "website",
+            //         new Dictionary<string, object> {
+            //             { "name", "website-static-files" },
+            //             { "tags", new Dictionary<string, string> {
+            //                 { "app", "website" }
+            //             }}
+            //         }
+            //     },
+            //     {
+            //         "images",
+            //         new Dictionary<string, object> {
+            //             { "name", "images" },
+            //             { "tags", new Dictionary<string, string> {
+            //                 { "app", "image-converter" }
+            //             }}
+            //         }
+            //     }
+            // });
             // MapTerraformIterator mapIterator = MapTerraformIterator.FromMap(values.AsAnyMap);
             // new TerraformLocal(this, "list-of-keys", mapIterator.Keys());
             // new TerraformLocal(this, "list-of-values", mapIterator.Values());
