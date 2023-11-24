@@ -121,7 +121,7 @@ namespace Examples
             // We need a local to be able to pass the list to the iterator
             TerraformLocal configuration = new TerraformLocal(this, "configuration", new Dictionary<string, object> {
                 {
-                    "website ",
+                    "website",
                     new Dictionary<string, object> {
                         { "name", "website-static-files" },
                         { "tags", new Dictionary<string, string> {
